@@ -1,0 +1,167 @@
+.logo{
+    margin: 20px 0 0 10px;
+    display: inline-block;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    background: #F3F5FC;
+    display: inline-block;
+}
+
+
+
+.texto{
+    background: #F3F5FC;
+    color: darkblue;
+    padding: 40px 100px;
+    border: none;
+    float: left;
+    width: 65%;
+    height: 75vh;
+    box-sizing: border-box;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 10px;
+    resize: none;
+    outline: none;
+}
+.texto::placeholder{
+    color: darkblue;
+    font-weight: bold;
+}
+.boxr{
+    background: white;
+    margin: 0 15px;
+    border: none;
+    float: right;
+    width: 30%;
+    height: 80vh;
+    box-sizing: border-box;
+    border-radius: 15px;
+    box-shadow:  10px 10px 1px lightgray;
+    
+}
+.respuesta{
+    color: blue;
+    padding: 10px;
+    margin: 20px 0 0 17px;
+    background: rgb(245, 245, 245);
+    border: 3px solid lightgray;
+    outline: none;
+    width: 90%;
+    height: 80%;
+    box-sizing: border-box;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 20px;
+    resize: none;
+}
+
+.copy {
+    width: 60px;
+    height: 60px;
+    float: right;
+    margin: 10px 20px 20px 20px;
+    background-color: darkblue;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.2s all;
+}
+
+.copy:hover{
+    transform: scale(1.2);
+}
+.copy:active{
+    color: darkblue;
+    background: #D8DFE8;
+    border: 1px solid;
+    border-color: darkblue;
+    transform: scale(1);
+}
+.encriptar {
+    margin: 0 0 0 100px;
+    font-size: 18px;
+    color: white;
+    background: darkblue;
+    padding: 18px;
+    border: none;
+    width: 25%;
+    border-radius: 24px;
+    transition: 0.4s all;
+}
+  
+.encriptar:hover {
+    background-color: rgb(7, 7, 59);
+    font-size: 23px;
+    padding: 16px 0;
+}
+  
+.encriptar:active {
+    color: darkblue;
+    background: #D8DFE8;
+    border: 1px solid;
+    padding: 10px;
+    border-color: darkblue;
+}
+  
+.encriptar:focus {
+    box-shadow: 0 0 0 2px darkblue;
+}
+  
+
+.desencriptar{
+    margin: 0 0 0 50px;
+    font-size: 18px;
+    color: darkblue;
+    background: #D8DFE8;
+    padding: 18px;
+    border-color: darkblue;
+    width: 25%;
+    border-radius: 24px;
+    transition: 0.4s all;
+}
+
+.desencriptar:hover {
+    background-color: #ffffff ;
+    font-size: 23px;
+    padding: 14px 0;
+}
+  
+.desencriptar:active {
+    color: #D8DFE8;
+    background: darkblue;
+    padding: 10px;
+}
+  
+.desencriptar:focus {
+    box-shadow: 0 0 0 2px #D8DFE8;
+}
+  
+@media only screen and (max-width: 920px) {
+    .texto{
+        width: 100%;
+        height: 35vh;
+        padding: 40px 20px;
+    }
+    .boxr{
+        width: 90%;
+        height: 40vh;
+        margin: 0 5%;
+
+    }
+    .respuesta{
+        height: 70%;
+    }
+    .encriptar{
+        margin: 30px 0 0 10%;
+        width: 35%;
+    }
+    .desencriptar{
+        width: 35%;
+        margin: 30px 0 0 10%;
+    }
+}
