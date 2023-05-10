@@ -2,7 +2,7 @@
 #### Este es un proyecto educativo para el curso de Alura, en el cual se desarrolló una herramienta para encriptar y desencriptar texto utilizando una técnica simple de sustitución de vocales por palabras clave.Fue creado con HTML, CSS y JavaScript.
 
 # Cómo usar
-#### Puedes acceder al encriptador de texto en línea desde https://tu-nombre-de-usuario.github.io/encriptador-de-texto/.  
+#### Puedes acceder al encriptador de texto en línea desde https://juancro99.github.io/encriptador-de-texto/.  
 
 #### También puedes descargar el código fuente de este repositorio y abrir el archivo index.html en tu navegador.  
 
