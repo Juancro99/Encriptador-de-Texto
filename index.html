@@ -1,34 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encriptador</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="scripts.js"></script>
-</head>
-<body>
-    <header>
-        <img src="imagenes/Logo.png" alt="logo" class="logo">
-    </header>
-    <main>
-        <section class="columna">
-            <textarea class="texto" id="texto-entrada" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
-            <div class="boxr">
-                <textarea class="respuesta" id="texto-salida" cols="30" rows="10" readonly placeholder="Todavia nada por aca..."></textarea>
-                <input type="button" value="Copy" class="copy" onclick="copyText('texto-salida')">
-            </div>           
-        </section>
-        <section>
-            <input onclick="actualizarTextoEncriptado()" type="submit" value="Encriptar" class="encriptar">  
-            <input onclick="actualizarTextoDesencriptado()" type="button" value="Desencriptar" class="desencriptar">  
-        </section>
-    </main>
-    <footer>
-
-          
-    </footer>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+        <title>Encriptador de Texto</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="scripts.js"></script>
+    </head>
+    <body>
+        <header>
+            <img src="imagenes/logo.png" alt="logo" class="logo">
+        </header>
+        <main>
+            <section class="columna">
+                <textarea class="texto" id="texto-entrada" cols="30" rows="10" placeholder="Ingrese el texto aquí..."></textarea>
+                <div class="boxr">
+                    <div class="respuesta">
+                        <textarea class="respuesta" id="texto-salida" cols="30" rows="10" readonly ></textarea>
+                    </div>
+                    <button type="button" value="" class="copy" onclick="copyText('texto-salida')"><img class="clip" src="imagenes/copy.png" alt="Clip"></button> 
+                </div>           
+            </section>
+            <section>
+                <label class="lb" >*Solo letras minúsculas y sin acentos</label>
+                <div>
+                    <input onclick="actualizarTextoEncriptado()" type="submit" value="Encriptar" class="encriptar">  
+                    <input onclick="actualizarTextoDesencriptado()" type="button" value="Desencriptar" class="desencriptar">  
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div>
+                Copyright &copy;
+                <script>document.write(new Date().getFullYear());</script> All rights reserved | 
+                Juan Cruz Segovia <i class="icon-heart" aria-hidden="true"></i>
+            </div>
+        </footer>
+    </body>
 </html>

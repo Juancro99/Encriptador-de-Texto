@@ -1,3 +1,5 @@
+
+  
 .logo{
     margin: 20px 0 0 10px;
     display: inline-block;
@@ -9,8 +11,6 @@ html, body {
     display: inline-block;
 }
 
-
-
 .texto{
     background: #F3F5FC;
     color: darkblue;
@@ -18,7 +18,7 @@ html, body {
     border: none;
     float: left;
     width: 65%;
-    height: 75vh;
+    height: 65vh;
     box-sizing: border-box;
     font-size: 25px;
     font-weight: bold;
@@ -43,7 +43,7 @@ html, body {
     
 }
 .respuesta{
-    color: blue;
+    color: darkblue;
     padding: 10px;
     margin: 20px 0 0 17px;
     background: rgb(245, 245, 245);
@@ -56,20 +56,28 @@ html, body {
     font-weight: bold;
     border-radius: 20px;
     resize: none;
+    transition: 1s all;
+}
+#texto-salida{
+    border: none;
+    background-image: url("imagenes/Muñeco.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .copy {
-    width: 60px;
-    height: 60px;
+    width: 7vh;
+    height: 7vh;
     float: right;
-    margin: 10px 20px 20px 20px;
+    margin: 1vh 1vw;
     background-color: darkblue;
     color: white;
     border: none;
     border-radius: 30px;
     cursor: pointer;
     font-size: 20px;
-    transition: 0.2s all;
+    transition: 0.1s all;
 }
 
 .copy:hover{
@@ -81,6 +89,20 @@ html, body {
     border: 1px solid;
     border-color: darkblue;
     transform: scale(1);
+}
+.clip{
+    width: 3vh;
+    filter: invert();
+    margin: 4px 0px 0px 0px;
+}
+.clip:active{
+    filter: none;
+}
+.lb{
+    margin: 0 0% 0 25%;
+    width: 10vw;
+    color: darkblue;
+    font-size: 14px;
 }
 .encriptar {
     margin: 0 0 0 100px;
@@ -140,6 +162,18 @@ html, body {
 .desencriptar:focus {
     box-shadow: 0 0 0 2px #D8DFE8;
 }
+footer{
+    display: inline;
+    width: 100vw;
+    position: absolute;
+    bottom: 0; 
+    text-align: center;
+}
+footer div{
+    margin: 10px 0 0 0;
+    color: darkblue;
+    font-size: 15px;
+}
   
 @media only screen and (max-width: 920px) {
     .texto{
@@ -155,13 +189,25 @@ html, body {
     }
     .respuesta{
         height: 70%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
     }
     .encriptar{
         margin: 30px 0 0 10%;
         width: 35%;
     }
+    .lb{
+        margin: 0 0 0 5%;
+        width: max-content;
+    }
     .desencriptar{
         width: 35%;
         margin: 30px 0 0 10%;
+    }
+    footer{
+        position: relative;
+        margin: 10px;
+        font-size: 16px;
     }
 }
