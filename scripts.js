@@ -76,7 +76,7 @@ function animar(img){
             out.style.opacity = "0";
             setTimeout(function() {
             out.style.backgroundSize = "contain"
-            out.style.backgroundImage = "url('imagenes/muñeco.png')";
+            out.style.backgroundImage = "url('imagenes/muneco.png')";
             }, 1000);
             setTimeout(function() {
             out.style.opacity = "1";
