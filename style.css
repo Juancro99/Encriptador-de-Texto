@@ -60,7 +60,7 @@ html, body {
 }
 #texto-salida{
     border: none;
-    background-image: url("imagenes/Muñeco.png");
+    background-image: url("imagenes/Muneco.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
